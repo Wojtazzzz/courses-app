@@ -5,7 +5,7 @@ import Container from '../atoms/Container.vue';
 
 const links = [
 	{ name: 'Home', href: '/' },
-	{ name: 'About us', href: '/about-us' },
+	{ name: 'About us', href: '/about' },
 	{ name: 'Courses', href: '/courses' },
 	{ name: 'Our Service', href: '/our-service' },
 	{ name: 'Contact us', href: '/contact' },
@@ -28,11 +28,12 @@ const isActive = false;
 						:key="index"
 						class="group flex items-center relative"
 					>
-						<a
-							:href="href"
+						<router-link
+							:to="href"
 							class="px-2 py-1 text-dark font-semibold focus-outline-secondary"
-							>{{ name }}</a
 						>
+							{{ name }}
+						</router-link>
 
 						<div
 							class="h-[3px] bg-primary absolute bottom-2.5 left-0 mx-2"
