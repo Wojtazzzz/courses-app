@@ -10,6 +10,8 @@ const links = [
 	{ name: 'Our Service', href: '/our-service' },
 	{ name: 'Contact us', href: '/contact' },
 ];
+
+const isActive = false;
 </script>
 
 <template>
@@ -24,13 +26,22 @@ const links = [
 					<li
 						v-for="({ name, href }, index) in links"
 						:key="index"
-						class="flex items-center"
+						class="group flex items-center relative"
 					>
 						<a
 							:href="href"
 							class="px-2 py-1 text-dark font-semibold focus-outline-secondary"
 							>{{ name }}</a
 						>
+
+						<div
+							class="h-[3px] bg-primary absolute bottom-2.5 left-0 mx-2"
+							:class="{
+								'w-7/12': isActive,
+								'w-3 group-hover:w-7/12 transition-[width] ease-out duration-[250ms]':
+									!isActive,
+							}"
+						></div>
 					</li>
 
 					<li>
