@@ -1,17 +1,11 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
 import AppName from '../atoms/AppName.vue';
 import Button from '../atoms/Button.vue';
 import Container from '../atoms/Container.vue';
+import { ROUTES } from '../../router';
 
-const links = [
-	{ name: 'Home', href: '/' },
-	{ name: 'About us', href: '/about' },
-	{ name: 'Courses', href: '/courses' },
-	{ name: 'Our Service', href: '/our-service' },
-	{ name: 'Contact us', href: '/contact' },
-];
-
-const isActive = false;
+const route = useRoute();
 </script>
 
 <template>
@@ -24,12 +18,12 @@ const isActive = false;
 			<nav>
 				<ul class="flex gap-5">
 					<li
-						v-for="({ name, href }, index) in links"
+						v-for="({ name, path }, index) in ROUTES"
 						:key="index"
 						class="group flex items-center relative"
 					>
 						<router-link
-							:to="href"
+							:to="path"
 							class="px-2 py-1 text-dark font-semibold focus-outline-secondary"
 						>
 							{{ name }}
@@ -38,9 +32,9 @@ const isActive = false;
 						<div
 							class="h-[3px] bg-primary absolute bottom-2.5 left-0 mx-2"
 							:class="{
-								'w-7/12': isActive,
+								'w-7/12': route.name === name,
 								'w-3 group-hover:w-7/12 transition-[width] ease-out duration-[250ms]':
-									!isActive,
+									route.name !== name,
 							}"
 						></div>
 					</li>
