@@ -85,17 +85,17 @@ import Container from '../atoms/Container.vue';
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
 					>
-						<div class="bg-white/20 p-3.5 lg:p-5 rounded-2xl flex flex-shrink-0">
+						<div class="bg-white/20 p-3.5 xl:p-5 rounded-2xl flex flex-shrink-0">
 							<img
 								src="../icons/online-test.svg"
-								class="w-8 h-8 lg:w-10 lg:h-10"
+								class="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
 								alt=""
 							/>
 						</div>
 
 						<p class="flex flex-col gap-2">
 							<span
-								class="font-bold text-white text-lg md:text-xl text-center lg:text-left lg:text-2xl"
+								class="font-bold text-white text-lg md:text-xl text-center lg:text-left xl:text-2xl"
 								>Learn The Latest Skills</span
 							>
 							<span
@@ -109,13 +109,17 @@ import Container from '../atoms/Container.vue';
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
 					>
-						<div class="bg-white/20 p-3.5 lg:p-5 rounded-2xl flex flex-shrink-0">
-							<img src="../icons/exam.svg" class="w-8 h-8 lg:w-10 lg:h-10" alt="" />
+						<div class="bg-white/20 p-3.5 xl:p-5 rounded-2xl flex flex-shrink-0">
+							<img
+								src="../icons/exam.svg"
+								class="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
+								alt=""
+							/>
 						</div>
 
 						<p class="flex flex-col gap-2">
 							<span
-								class="font-bold text-white text-lg md:text-xl text-center lg:text-left lg:text-2xl"
+								class="font-bold text-white text-lg md:text-xl text-center lg:text-left xl:text-2xl"
 								>Get Ready For a Career</span
 							>
 							<span
@@ -129,17 +133,17 @@ import Container from '../atoms/Container.vue';
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
 					>
-						<div class="bg-white/20 p-3.5 lg:p-5 rounded-2xl flex flex-shrink-0">
+						<div class="bg-white/20 p-3.5 xl:p-5 rounded-2xl flex flex-shrink-0">
 							<img
 								src="../icons/certification.svg"
-								class="w-8 h-8 lg:w-10 lg:h-10"
+								class="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
 								alt=""
 							/>
 						</div>
 
 						<p class="flex flex-col gap-2">
 							<span
-								class="font-bold text-white text-lg md:text-xl text-center lg:text-left lg:text-2xl"
+								class="font-bold text-white text-lg md:text-xl text-center lg:text-left xl:text-2xl"
 								>Earn a Certificate</span
 							>
 							<span
