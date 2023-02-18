@@ -20,7 +20,7 @@ import Container from '../atoms/Container.vue';
 		<img
 			src="../icons/atom.svg"
 			alt=""
-			class="w-10 md:w-16 lg:w-20 absolute -top-5 right-[8%]"
+			class="w-10 md:w-16 lg:w-20 absolute -top-1 right-[8%]"
 		/>
 
 		<img
