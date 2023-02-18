@@ -7,7 +7,7 @@ const route = useRoute();
 </script>
 
 <template>
-	<ul class="lg:flex gap-5 hidden">
+	<ul role="list" class="lg:flex gap-5 hidden">
 		<li
 			v-for="({ name, path }, index) in ROUTES"
 			:key="index"

@@ -17,11 +17,11 @@ const { isActive, open, close } = useMobileNavbar();
 				class="absolute top-5 right-5 focus-outline-secondary p-2"
 				@click="close"
 			>
-				<div class="sr-only">close navigation</div>
+				<span class="sr-only">close navigation</span>
 				<img src="../../icons/cross.svg" width="32" height="32" alt="Close navigation" />
 			</button>
 
-			<ul class="flex flex-col items-center gap-5">
+			<ul role="list" class="flex flex-col items-center gap-5">
 				<li
 					v-for="({ name, path }, index) in ROUTES"
 					:key="index"
@@ -43,7 +43,7 @@ const { isActive, open, close } = useMobileNavbar();
 		</div>
 
 		<button type="button" class="focus-outline-secondary p-2" @click="open">
-			<div class="sr-only">open navigation</div>
+			<span class="sr-only">open navigation</span>
 			<img src="../../icons/menu.svg" width="32" height="32" alt="Open navigation" />
 		</button>
 	</div>
