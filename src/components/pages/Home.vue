@@ -1,5 +1,7 @@
+<script setup lang="ts">
+import Hero from '../molecules/Hero.vue';
+</script>
+
 <template>
-	<div>
-		<span>HOME</span>
-	</div>
+	<Hero />
 </template>
