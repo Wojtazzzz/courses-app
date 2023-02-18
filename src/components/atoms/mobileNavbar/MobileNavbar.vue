@@ -12,7 +12,11 @@ const { isActive, open, close } = useMobileNavbar();
 			v-show="isActive"
 			class="w-screen h-screen fixed top-0 left-0 flex justify-center items-center bg-theme z-40"
 		>
-			<button type="button" class="absolute top-5 right-5" @click="close">
+			<button
+				type="button"
+				class="absolute top-5 right-5 focus-outline-secondary p-2"
+				@click="close"
+			>
 				<div class="sr-only">close navigation</div>
 				<img src="../../icons/cross.svg" width="32" height="32" alt="Close navigation" />
 			</button>
@@ -38,7 +42,7 @@ const { isActive, open, close } = useMobileNavbar();
 			</ul>
 		</div>
 
-		<button type="button" @click="open">
+		<button type="button" class="focus-outline-secondary p-2" @click="open">
 			<div class="sr-only">open navigation</div>
 			<img src="../../icons/menu.svg" width="32" height="32" alt="Open navigation" />
 		</button>
