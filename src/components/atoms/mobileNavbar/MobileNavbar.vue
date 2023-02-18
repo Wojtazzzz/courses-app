@@ -10,7 +10,7 @@ const { isActive, open, close } = useMobileNavbar();
 	<div class="lg:hidden">
 		<div
 			v-show="isActive"
-			class="w-screen h-screen fixed top-0 left-0 flex justify-center items-center bg-theme z-40"
+			class="w-screen h-screen fixed top-0 left-0 flex justify-center bg-theme-primary items-center bg-theme z-40"
 		>
 			<button
 				type="button"
