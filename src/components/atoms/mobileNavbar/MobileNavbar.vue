@@ -37,7 +37,7 @@ const { isActive, open, close } = useMobileNavbar();
 				</li>
 
 				<li>
-					<Button @click="close">Sign in</Button>
+					<Button variant="primary" @click="close">Sign in</Button>
 				</li>
 			</ul>
 		</div>

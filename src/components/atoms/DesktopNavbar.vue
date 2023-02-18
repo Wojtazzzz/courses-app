@@ -31,7 +31,7 @@ const route = useRoute();
 		</li>
 
 		<li>
-			<Button>Sign in</Button>
+			<Button variant="primary">Sign in</Button>
 		</li>
 	</ul>
 </template>
