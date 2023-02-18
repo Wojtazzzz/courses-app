@@ -36,7 +36,7 @@ import Container from '../atoms/Container.vue';
 		/>
 
 		<Container>
-			<header class="pt-12 lg:pt-16 pb-32 lg:pb-52 relative">
+			<header class="pt-12 pb-16 lg:pt-16 lg:pb-52 relative">
 				<div class="flex justify-center items-center gap-8">
 					<hgroup class="w-full lg:w-2/5 space-y-4">
 						<h2 class="font-black flex flex-col text-4xl md:text-5xl lg:text-6xl">
@@ -80,7 +80,7 @@ import Container from '../atoms/Container.vue';
 				</div>
 
 				<AccentContainer
-					class="max-w-lg lg:max-w-none flex flex-col lg:flex-row lg:justify-evenly gap-8 lg:gap-10 absolute inset-x-0 top-[85%]"
+					class="max-w-lg lg:max-w-none flex flex-col lg:flex-row lg:justify-evenly gap-8 lg:gap-10 mt-8 lg:absolute lg:inset-x-0 lg:top-[85%]"
 				>
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"

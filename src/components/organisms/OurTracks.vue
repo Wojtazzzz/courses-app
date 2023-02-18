@@ -7,7 +7,7 @@ const courses = [{ id: 1 }, { id: 2 }, { id: 3 }];
 </script>
 
 <template>
-	<Container class="mt-[700px] md:mt-52">
+	<Container class="mt-14 lg:mt-64">
 		<section class="space-y-8">
 			<div>
 				<SectionTitle
