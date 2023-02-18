@@ -9,10 +9,25 @@ const courses = [{ id: 1 }, { id: 2 }, { id: 3 }];
 <template>
 	<Container class="mt-14 lg:mt-64">
 		<section class="space-y-8">
-			<div>
+			<div class="w-full relative">
+				<img
+					src="../icons/light-bulb-filled.svg"
+					width="110"
+					class="absolute top-10 sm:top-3 left-[1%] z-0"
+					alt=""
+				/>
+
 				<SectionTitle
 					title="Our Tracks"
 					subtitle="Lorem Ipsum is simply dummy text of the printing."
+					class="relative z-10"
+				/>
+
+				<img
+					src="../icons/curled-arrow.svg"
+					width="110"
+					class="absolute -top-10 -right-4 sm:right-[6%] z-0"
+					alt=""
 				/>
 			</div>
 
