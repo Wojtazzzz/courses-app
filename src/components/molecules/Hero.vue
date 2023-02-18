@@ -4,7 +4,37 @@ import Container from '../atoms/Container.vue';
 </script>
 
 <template>
-	<div class="bg-theme-primary">
+	<div class="bg-theme-primary relative">
+		<img
+			src="../icons/test-tube.svg"
+			alt=""
+			class="w-10 md:w-16 lg:w-20 absolute bottom-10 md:bottom-24 left-8"
+		/>
+
+		<img
+			src="../icons/ruler.svg"
+			alt=""
+			class="w-10 md:w-16 lg:w-20 absolute top-4 md:top-0 left-12 md:left-96 lg:left-52"
+		/>
+
+		<img
+			src="../icons/atom.svg"
+			alt=""
+			class="w-10 md:w-16 lg:w-20 absolute -top-5 right-[8%]"
+		/>
+
+		<img
+			src="../icons/set-square.svg"
+			alt=""
+			class="w-10 md:w-16 lg:w-20 absolute bottom-28 lg:bottom-56 left-[33%]"
+		/>
+
+		<img
+			src="../icons/globe.svg"
+			alt=""
+			class="w-10 md:w-16 lg:w-20 absolute bottom-20 lg:bottom-28 right-[14%]"
+		/>
+
 		<Container>
 			<header class="pt-12 lg:pt-16 pb-32 lg:pb-52 relative">
 				<div class="flex justify-center items-center gap-8">
@@ -26,13 +56,31 @@ import Container from '../atoms/Container.vue';
 						</p>
 					</hgroup>
 
-					<div class="w-3/5 hidden lg:block">
-						<img src="../icons/hero-img.svg" width="830" height="315" alt="" />
+					<div class="w-3/5 hidden lg:block relative">
+						<img
+							src="../icons/hero-img.svg"
+							width="830"
+							height="315"
+							class="relative z-20"
+							alt=""
+						/>
+
+						<img
+							src="../icons/ellipse.svg"
+							alt=""
+							class="w-72 absolute -top-16 -right-4 z-0"
+						/>
+
+						<img
+							src="../icons/light-bulb.svg"
+							alt=""
+							class="w-20 absolute -top-8 left-[2%]"
+						/>
 					</div>
 				</div>
 
 				<AccentContainer
-					class="flex flex-col lg:flex-row lg:justify-evenly gap-8 lg:gap-10 absolute inset-x-0 top-[85%]"
+					class="max-w-lg lg:max-w-none flex flex-col lg:flex-row lg:justify-evenly gap-8 lg:gap-10 absolute inset-x-0 top-[85%]"
 				>
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
