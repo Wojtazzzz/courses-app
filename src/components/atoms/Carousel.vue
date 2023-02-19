@@ -13,7 +13,7 @@ import 'swiper/css/scrollbar';
 		tag="section"
 		:modules="[Pagination, A11y, Autoplay]"
 		class="mt-12"
-		wrapper-class="mb-16"
+		wrapper-class="mb-20"
 		wrapper-tag="ul"
 		:breakpoints="{
 			'576': {
