@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import AccentContainer from '../atoms/AccentContainer.vue';
+import Button from '../atoms/Button.vue';
 import Container from '../atoms/Container.vue';
+import InputBox from '../atoms/InputBox.vue';
 </script>
 
 <template>
@@ -51,7 +53,7 @@ import Container from '../atoms/Container.vue';
 			/>
 
 			<div class="text-center">
-				<hgroup class="text-white space-y-4">
+				<hgroup class="text-white space-y-2">
 					<h3 class="font-semibold text-2xl md:text-3xl lg:text-4xl">
 						Subscribe to our newsletter
 					</h3>
@@ -59,6 +61,14 @@ import Container from '../atoms/Container.vue';
 						Lorem Ipsum is simply dummy text of the printing.
 					</p>
 				</hgroup>
+
+				<div class="mt-8">
+					<InputBox
+						variant="secondary"
+						button-text="Send"
+						input-placeholder="Email Address"
+					/>
+				</div>
 			</div>
 		</AccentContainer>
 	</Container>
