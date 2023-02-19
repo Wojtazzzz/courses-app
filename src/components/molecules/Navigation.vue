@@ -10,7 +10,9 @@ import MobileNavbar from '../atoms/mobileNavbar/MobileNavbar.vue';
 		<Container>
 			<header class="flex justify-between items-center py-4 md:py-6 lg:py-8">
 				<router-link to="/" class="focus-outline-secondary px-2 py-1">
-					<AppName />
+					<h1>
+						<AppName />
+					</h1>
 				</router-link>
 
 				<nav>
