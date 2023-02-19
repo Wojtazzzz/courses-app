@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Hero from '../molecules/Hero.vue';
 import PremiumExperienceSection from '../molecules/PremiumExperienceSection.vue';
+import FeedbackSection from '../organisms/FeedbackSection.vue';
 import OurTracksSection from '../organisms/OurTracksSection.vue';
 </script>
 
@@ -13,5 +14,9 @@ import OurTracksSection from '../organisms/OurTracksSection.vue';
 
 	<div class="mt-20 md:mt-28">
 		<PremiumExperienceSection />
+	</div>
+
+	<div class="mt-20 md:mt-28">
+		<FeedbackSection />
 	</div>
 </template>

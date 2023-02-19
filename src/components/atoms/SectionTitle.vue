@@ -9,9 +9,9 @@ defineProps<SectionTitleProps>();
 
 <template>
 	<hgroup class="text-center">
-		<h3 class="font-semibold text-3xl md:text-4xl lg:text-5xl mb-2">Our Tracks</h3>
+		<h3 class="font-semibold text-3xl md:text-4xl lg:text-5xl mb-2">{{ title }}</h3>
 		<p class="font-medium text-base md:text-lg text-gray-400">
-			Lorem Ipsum is simply dummy text of the printing.
+			{{ subtitle }}
 		</p>
 	</hgroup>
 </template>
