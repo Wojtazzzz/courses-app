@@ -14,11 +14,11 @@ const currentYear = new Date().getFullYear();
 				<div
 					class="w-full max-w-lg lg:w-1/5 flex flex-col gap-y-4 text-center lg:text-left"
 				>
-					<RouterLink to="/" class="flex justify-center lg:items-start">
+					<RouterLink to="/" class="flex justify-center lg:justify-start">
 						<AppName />
 					</RouterLink>
 
-					<span class="text-gray-500 text-center"
+					<span class="text-gray-500 text-center lg:text-left"
 						>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						Lorem Ipsum has been the industry's standard dummy a type specimen
 						book.</span
