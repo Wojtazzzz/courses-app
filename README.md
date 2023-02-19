@@ -13,6 +13,10 @@ Courses App was built using the following technologies:
 - Tailwindcss
 - Vite
 
+## Live Preview
+
+[Vercel CI](https://courses-app-iota.vercel.app/)
+
 ## Layout
 
 [Figma Community Layout](https://www.figma.com/community/file/1204113366416049050)
