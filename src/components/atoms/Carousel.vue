@@ -15,6 +15,8 @@ import 'swiper/css/scrollbar';
 		class="mt-12"
 		wrapper-class="mb-20"
 		wrapper-tag="ul"
+		aria-label="Students feedback"
+		aria-roledescription="carousel"
 		:breakpoints="{
 			'576': {
 				slidesPerView: 2,
@@ -31,6 +33,7 @@ import 'swiper/css/scrollbar';
 			bulletElement: 'button',
 			bulletClass: 'swiper-bullet',
 			bulletActiveClass: 'swiper-bullet-active',
+			el: '#feedback-pagination',
 		}"
 	>
 		<slot></slot>

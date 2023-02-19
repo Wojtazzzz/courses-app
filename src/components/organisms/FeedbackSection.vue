@@ -24,7 +24,7 @@ import 'swiper/css/scrollbar';
 			/>
 
 			<Carousel>
-				<SwiperSlide v-for="feedback in 7" tag="li">
+				<SwiperSlide v-for="feedback in 7" tag="li" aria-roledescription="slide">
 					<article class="shadow-xl p-5 space-y-8 rounded-sm bg-theme-primary">
 						<q class="text-dark"
 							>Complete account of the system and expound the actual Contrary to
@@ -46,6 +46,13 @@ import 'swiper/css/scrollbar';
 						</header>
 					</article>
 				</SwiperSlide>
+
+				<nav
+					id="feedback-pagination"
+					role="group"
+					aria-label="Choose slide to display"
+					class="w-full flex justify-center"
+				></nav>
 			</Carousel>
 		</Container>
 	</div>
