@@ -10,3 +10,12 @@
 		@apply focus-visible:outline-secondary focus-visible:outline-dashed focus-visible:outline-offset-4 outline-2 rounded-xl;
 	}
 }
+
+@layer components {
+	.swiper-bullet {
+		@apply w-4 h-4 rounded-full mx-2 bg-gray-300 transition-all ease-out duration-[350ms];
+	}
+	.swiper-bullet-active {
+		@apply w-10 bg-primary;
+	}
+}

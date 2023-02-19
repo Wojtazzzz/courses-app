@@ -4,7 +4,8 @@ import Navigation from './components/molecules/Navigation.vue';
 
 <template>
 	<Navigation />
-	<main class="overflow-hidden">
+
+	<main class="overflow-hidden min-h-[9999999999999px]">
 		<RouterView />
 	</main>
 </template>

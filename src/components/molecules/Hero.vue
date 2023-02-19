@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import AccentContainer from '../atoms/AccentContainer.vue';
+import BadgeIcon from '../atoms/BadgeIcon.vue';
 import Container from '../atoms/Container.vue';
+import ExamIcon from '../icons/exam.svg';
+import OnlineTestIcon from '../icons/online-test.svg';
+import CertificationIcon from '../icons/certification.svg';
 </script>
 
 <template>
@@ -85,13 +89,7 @@ import Container from '../atoms/Container.vue';
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
 					>
-						<div class="bg-white/20 p-3.5 xl:p-5 rounded-2xl flex flex-shrink-0">
-							<img
-								src="../icons/online-test.svg"
-								class="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
-								alt=""
-							/>
-						</div>
+						<BadgeIcon :icon="OnlineTestIcon" variant="secondary" />
 
 						<p class="flex flex-col gap-2">
 							<span
@@ -109,13 +107,7 @@ import Container from '../atoms/Container.vue';
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
 					>
-						<div class="bg-white/20 p-3.5 xl:p-5 rounded-2xl flex flex-shrink-0">
-							<img
-								src="../icons/exam.svg"
-								class="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
-								alt=""
-							/>
-						</div>
+						<BadgeIcon :icon="ExamIcon" variant="secondary" />
 
 						<p class="flex flex-col gap-2">
 							<span
@@ -133,13 +125,7 @@ import Container from '../atoms/Container.vue';
 					<div
 						class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6 w-full lg:w-1/3"
 					>
-						<div class="bg-white/20 p-3.5 xl:p-5 rounded-2xl flex flex-shrink-0">
-							<img
-								src="../icons/certification.svg"
-								class="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
-								alt=""
-							/>
-						</div>
+						<BadgeIcon :icon="CertificationIcon" variant="secondary" />
 
 						<p class="flex flex-col gap-2">
 							<span
