@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import Footer from './components/atoms/Footer.vue';
 import Navigation from './components/molecules/Navigation.vue';
 </script>
 
 <template>
 	<Navigation />
 
-	<main class="overflow-hidden min-h-[9999999999999px]">
+	<main class="overflow-hidden">
 		<RouterView />
 	</main>
+
+	<Footer />
 </template>
