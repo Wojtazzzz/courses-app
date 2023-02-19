@@ -44,7 +44,7 @@ const STARS = 4;
 				</div>
 			</header>
 
-			<aside class="flex justify-center my-3">
+			<footer class="flex justify-center my-3">
 				<ul role="list" class="flex items-center gap-4">
 					<li class="flex items-center gap-1.5">
 						<img src="../icons/cardCourse/time.svg" width="19" height="19" alt="" />
@@ -70,7 +70,7 @@ const STARS = 4;
 						>
 					</li>
 				</ul>
-			</aside>
+			</footer>
 
 			<Button
 				variant="secondary"
