@@ -4,14 +4,14 @@ import NewsletterSection from '../molecules/NewsletterSection.vue';
 import OurTeachers from '../molecules/OurTeachers.vue';
 import PremiumExperienceSection from '../molecules/PremiumExperienceSection.vue';
 import FeedbackSection from '../organisms/FeedbackSection.vue';
-import OurTracksSection from '../organisms/OurTracksSection.vue';
+import TopCoursesSection from '../organisms/topCoursesSection/TopCoursesSection.vue';
 </script>
 
 <template>
 	<Hero />
 
 	<div class="mt-14 lg:mt-64">
-		<OurTracksSection />
+		<TopCoursesSection />
 	</div>
 
 	<div class="mt-20 md:mt-28">
