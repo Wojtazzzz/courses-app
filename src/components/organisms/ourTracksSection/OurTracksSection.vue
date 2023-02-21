@@ -2,6 +2,7 @@
 import Container from '../../atoms/Container.vue';
 import SectionTitle from '../../atoms/SectionTitle.vue';
 import CourseCard from '../../molecules/CourseCard.vue';
+import Loader from '../../atoms/Loader.vue';
 import { useCourses } from './useCourses';
 
 const { courses, isLoading, isError } = useCourses();
@@ -32,7 +33,7 @@ const { courses, isLoading, isError } = useCourses();
 				/>
 			</div>
 
-			<span v-if="isLoading">LOADING...</span>
+			<Loader v-if="true" />
 			<span v-else-if="isError">Something went wrong, please try again later</span>
 			<ul
 				v-else
