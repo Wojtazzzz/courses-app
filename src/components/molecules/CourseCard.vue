@@ -15,13 +15,13 @@ defineProps<CourseCardProps>();
 </script>
 
 <template>
-	<RouterLink to="/course/1">
+	<RouterLink :to="`/course/${id}`">
 		<article
 			class="max-w-[490px] w-full space-y-3 p-3 pb-12 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
 		>
 			<img
-				src="../icons/cardCourse/dummy-course-avatar.png"
-				class="rounded-xl w-full"
+				:src="`http://localhost:8000${thumbnail}`"
+				class="rounded-xl w-full max-h-60"
 				alt=""
 			/>
 
@@ -30,8 +30,8 @@ defineProps<CourseCardProps>();
 			>
 				<hgroup>
 					<p class="font-medium text-gray-400">UI/UX Design</p>
-					<h4 class="font-medium text-lg">UI/UX Design for Beginners</h4>
-					<p class="font-semibold text-lg text-secondary">$98</p>
+					<h4 class="font-medium text-lg">{{ name }}</h4>
+					<p class="font-semibold text-lg text-secondary">${{ price }}</p>
 				</hgroup>
 
 				<div class="flex gap-x-0.5 absolute top-0 right-0">
@@ -76,7 +76,7 @@ defineProps<CourseCardProps>();
 					<li class="flex items-center gap-1.5">
 						<img src="../icons/cardCourse/download.svg" width="17" height="17" alt="" />
 						<span class="text-gray-400 font-medium text-sm md:text-base text-center"
-							>250 Sales</span
+							>{{ sales }} Sales</span
 						>
 					</li>
 				</ul>
