@@ -9,7 +9,7 @@ const currentYear = new Date().getFullYear();
 	<footer class="bg-theme-primary w-full mt-36">
 		<Container>
 			<div
-				class="py-10 flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start gap-10 lg:gap-0 border-b border-gray-400/60"
+				class="py-10 flex flex-col items-center lg:flex-row lg:justify-between lg:items-start gap-10 lg:gap-0 border-b border-gray-400/60"
 			>
 				<div
 					class="w-full max-w-lg lg:w-1/5 flex flex-col gap-y-4 text-center lg:text-left"
