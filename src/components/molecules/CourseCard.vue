@@ -1,17 +1,18 @@
 <script setup lang="ts">
 import Button from '../atoms/Button.vue';
 
-const STARS = 4;
-
 type CourseCardProps = {
 	id: number;
 	name: string;
 	price: number;
 	thumbnail: string;
 	sales: number;
+	ratings_avg_value: string;
 };
 
-defineProps<CourseCardProps>();
+const { ratings_avg_value } = defineProps<CourseCardProps>();
+
+const stars = parseFloat(ratings_avg_value);
 </script>
 
 <template>
@@ -33,14 +34,14 @@ defineProps<CourseCardProps>();
 				<div class="flex gap-x-0.5 absolute top-0 right-0">
 					<div v-for="star in 5">
 						<img
-							v-if="star <= STARS"
+							v-if="star <= stars"
 							src="../icons/cardCourse/stars/star-filled.svg"
 							width="16"
 							height="16"
 							alt=""
 						/>
 						<img
-							v-else="star <= STARS"
+							v-else="star <= stars"
 							src="../icons/cardCourse/stars/star-empty.svg"
 							width="16"
 							height="16"
