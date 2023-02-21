@@ -2,10 +2,20 @@
 import Button from '../atoms/Button.vue';
 
 const STARS = 4;
+
+type CourseCardProps = {
+	id: number;
+	name: string;
+	price: number;
+	thumbnail: string;
+	sales: number;
+};
+
+defineProps<CourseCardProps>();
 </script>
 
 <template>
-	<router-link to="/course/1">
+	<RouterLink to="/course/1">
 		<article
 			class="max-w-[490px] w-full space-y-3 p-3 pb-12 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
 		>
@@ -78,5 +88,5 @@ const STARS = 4;
 				>Join Course</Button
 			>
 		</article>
-	</router-link>
+	</RouterLink>
 </template>

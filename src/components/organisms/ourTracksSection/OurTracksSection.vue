@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import Container from '../atoms/Container.vue';
-import SectionTitle from '../atoms/SectionTitle.vue';
-import CourseCard from '../molecules/CourseCard.vue';
+import Container from '../../atoms/Container.vue';
+import SectionTitle from '../../atoms/SectionTitle.vue';
+import CourseCard from '../../molecules/CourseCard.vue';
+import { useCourses } from './useCourses';
 
-const courses = [{ id: 1 }, { id: 2 }, { id: 3 }];
+const { courses, isLoading, isError } = useCourses();
 </script>
 
 <template>
@@ -31,12 +32,15 @@ const courses = [{ id: 1 }, { id: 2 }, { id: 3 }];
 				/>
 			</div>
 
+			<span v-if="isLoading">LOADING...</span>
+			<span v-else-if="isError">Something went wrong, please try again later</span>
 			<ul
+				v-else
 				role="list"
 				class="flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-12"
 			>
 				<li v-for="course in courses">
-					<CourseCard />
+					<CourseCard v-bind="course" />
 				</li>
 			</ul>
 		</section>

@@ -4,7 +4,7 @@ import NewsletterSection from '../molecules/NewsletterSection.vue';
 import OurTeachers from '../molecules/OurTeachers.vue';
 import PremiumExperienceSection from '../molecules/PremiumExperienceSection.vue';
 import FeedbackSection from '../organisms/FeedbackSection.vue';
-import OurTracksSection from '../organisms/OurTracksSection.vue';
+import OurTracksSection from '../organisms/ourTracksSection/OurTracksSection.vue';
 </script>
 
 <template>
