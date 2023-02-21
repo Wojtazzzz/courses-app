@@ -1,16 +1,17 @@
 import { useQuery } from '@tanstack/vue-query';
 import { axios } from '../../../utils/axios';
+import { getTopCoursesQK } from '../../../utils/queryKeys';
+
+const queryKey = getTopCoursesQK();
+
+const queryFn = async () => {
+	return await axios.get('/courses/top').then((response) => response.data);
+};
 
 export const useTopCourses = () => {
-	const queryFn = async () => {
-		return await axios.get('/courses').then((response) => response.data);
-	};
-
-	const queryKey = ['courses'];
-
 	const { data, isLoading, isError } = useQuery({
 		queryKey,
-		queryFn: async () => await queryFn(),
+		queryFn,
 	});
 
 	return {
