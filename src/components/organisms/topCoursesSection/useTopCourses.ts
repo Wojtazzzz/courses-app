@@ -5,7 +5,7 @@ import { getTopCoursesQK } from '../../../utils/queryKeys';
 const queryKey = getTopCoursesQK();
 
 const queryFn = async () => {
-	return await axios.get('/courses/top').then((response) => response.data);
+	return await axios.get('/courses/bests').then((response) => response.data);
 };
 
 export const useTopCourses = () => {
