@@ -7,41 +7,41 @@ type CourseCardProps = {
 	price: number;
 	thumbnail: string;
 	sales: number;
-	rating: string;
+	rating: number;
 };
 
-const { rating } = defineProps<CourseCardProps>();
-
-const stars = parseFloat(rating);
+defineProps<CourseCardProps>();
 </script>
 
 <template>
 	<RouterLink :to="`/course/${id}`">
 		<article
-			class="max-w-lg w-full space-y-3 p-3 pb-12 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
+			class="sm:w-[350px] lg:w-[320px] xl:w-[380px] w-[300px] space-y-3 p-3 pb-12 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
 		>
 			<img :src="thumbnail" class="rounded-xl w-full max-h-60" alt="" />
 
 			<header
 				class="w-full flex justify-between border-b-2 border-dotted border-gray-400/40 pb-2 relative"
 			>
-				<hgroup>
+				<hgroup class="w-full">
 					<p class="font-medium text-gray-400">UI/UX Design</p>
-					<h4 class="font-medium text-lg">{{ name }}</h4>
+					<h4 class="w-11/12 whitespace-nowrap overflow-hidden text-ellipsis">
+						{{ name }}
+					</h4>
 					<p class="font-semibold text-lg text-secondary">${{ price }}</p>
 				</hgroup>
 
 				<div class="flex gap-x-0.5 absolute top-0 right-0">
 					<div v-for="star in 5">
 						<img
-							v-if="star <= stars"
+							v-if="star <= rating"
 							src="../icons/cardCourse/stars/star-filled.svg"
 							width="16"
 							height="16"
 							alt=""
 						/>
 						<img
-							v-else="star <= stars"
+							v-else="star <= rating"
 							src="../icons/cardCourse/stars/star-empty.svg"
 							width="16"
 							height="16"
