@@ -4,9 +4,9 @@ import SectionTitle from '../../atoms/SectionTitle.vue';
 import CourseCard from '../../molecules/CourseCard.vue';
 import Loader from '../../atoms/Loader.vue';
 import ApiError from '../../atoms/ApiError.vue';
-import { useCourses } from './useCourses';
+import { useTopCourses } from './useTopCourses';
 
-const { courses, isLoading, isError } = useCourses();
+const { courses, isLoading, isError } = useTopCourses();
 </script>
 
 <template>
@@ -21,8 +21,8 @@ const { courses, isLoading, isError } = useCourses();
 				/>
 
 				<SectionTitle
-					title="Our Tracks"
-					subtitle="Lorem Ipsum is simply dummy text of the printing."
+					title="Top Courses"
+					subtitle="Our top courses with the best students ratings"
 					class="relative z-10"
 				/>
 

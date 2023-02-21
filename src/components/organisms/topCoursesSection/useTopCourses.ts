@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/vue-query';
 import { axios } from '../../../utils/axios';
 
-export const useCourses = () => {
+export const useTopCourses = () => {
 	const queryFn = async () => {
 		return await axios.get('/courses').then((response) => response.data);
 	};
