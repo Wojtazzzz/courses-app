@@ -14,7 +14,7 @@ const { courses, isLoading, isError } = useTopCourses();
 		<section class="space-y-8">
 			<div class="w-full relative">
 				<img
-					src="../icons/light-bulb-filled.svg"
+					src="../../icons/light-bulb-filled.svg"
 					width="110"
 					class="absolute top-10 sm:top-3 left-[1%] z-0"
 					alt=""
@@ -27,7 +27,7 @@ const { courses, isLoading, isError } = useTopCourses();
 				/>
 
 				<img
-					src="../icons/curled-arrow.svg"
+					src="../../icons/curled-arrow.svg"
 					width="110"
 					class="absolute -top-10 -right-4 sm:right-[6%] z-0"
 					alt=""
