@@ -3,6 +3,7 @@ import Container from '../../atoms/Container.vue';
 import SectionTitle from '../../atoms/SectionTitle.vue';
 import CourseCard from '../../molecules/CourseCard.vue';
 import Loader from '../../atoms/Loader.vue';
+import ApiError from '../../atoms/ApiError.vue';
 import { useCourses } from './useCourses';
 
 const { courses, isLoading, isError } = useCourses();
@@ -33,8 +34,8 @@ const { courses, isLoading, isError } = useCourses();
 				/>
 			</div>
 
-			<Loader v-if="true" />
-			<span v-else-if="isError">Something went wrong, please try again later</span>
+			<Loader v-if="isLoading" />
+			<ApiError v-else-if="isError" />
 			<ul
 				v-else
 				role="list"
