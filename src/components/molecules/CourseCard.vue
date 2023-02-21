@@ -7,12 +7,12 @@ type CourseCardProps = {
 	price: number;
 	thumbnail: string;
 	sales: number;
-	ratings_avg_value: string;
+	rating: string;
 };
 
-const { ratings_avg_value } = defineProps<CourseCardProps>();
+const { rating } = defineProps<CourseCardProps>();
 
-const stars = parseFloat(ratings_avg_value);
+const stars = parseFloat(rating);
 </script>
 
 <template>
