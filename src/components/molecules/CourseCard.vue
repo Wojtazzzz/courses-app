@@ -17,13 +17,9 @@ defineProps<CourseCardProps>();
 <template>
 	<RouterLink :to="`/course/${id}`">
 		<article
-			class="max-w-[490px] w-full space-y-3 p-3 pb-12 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
+			class="max-w-lg w-full space-y-3 p-3 pb-12 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
 		>
-			<img
-				:src="`http://localhost:8000${thumbnail}`"
-				class="rounded-xl w-full max-h-60"
-				alt=""
-			/>
+			<img :src="thumbnail" class="rounded-xl w-full max-h-60" alt="" />
 
 			<header
 				class="w-full flex justify-between border-b-2 border-dotted border-gray-400/40 pb-2 relative"
