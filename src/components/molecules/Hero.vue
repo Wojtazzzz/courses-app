@@ -25,7 +25,7 @@ import FloatingIcon from '../atoms/FloatingIcon.vue';
 
 		<Container>
 			<header class="pt-12 pb-4 lg:pt-16 lg:pb-52 relative">
-				<div class="flex justify-center items-center gap-8">
+				<div class="flex justify-center items-center gap-8 mb-12">
 					<hgroup class="w-full lg:w-2/5 space-y-4">
 						<h2 class="font-black flex flex-col text-4xl md:text-5xl lg:text-6xl">
 							<p>
