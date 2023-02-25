@@ -2,7 +2,14 @@
 import BadgeIcon from '../atoms/BadgeIcon.vue';
 import HeartsIcon from '../icons/hearts.svg';
 import JigsawIcon from '../icons/jigsaw.svg';
+import LightBulbIcon from '../icons/floating/light-bulb.svg';
+import AtomIcon from '../icons/floating/atom.svg';
+import GlobeIcon from '../icons/floating/globe.svg';
 import Container from '../atoms/Container.vue';
+import FloatingIcon from '../atoms/FloatingIcon.vue';
+import PencilIcon from '../icons/floating/pencil.svg';
+import TestTubeIcon from '../icons/floating/test-tube.svg';
+import GalaxyIcon from '../icons/floating/galaxy.svg';
 </script>
 
 <template>
@@ -17,41 +24,18 @@ import Container from '../atoms/Container.vue';
 						alt=""
 					/>
 
-					<img
-						src="../icons/light-bulb.svg"
-						alt=""
-						class="w-10 md:w-16 lg:w-20 absolute -top-4 left-[4%]"
-					/>
-
-					<img
-						src="../icons/atom.svg"
-						alt=""
-						class="w-10 md:w-16 lg:w-20 absolute top-64 left-full"
-					/>
-
-					<img
-						src="../icons/globe.svg"
-						alt=""
-						class="w-10 md:w-16 lg:w-20 absolute bottom-28 right-[100%]"
-					/>
+					<FloatingIcon :icon="LightBulbIcon" class="-top-4 left-[4%]" />
+					<FloatingIcon :icon="AtomIcon" class="top-64 left-full" />
+					<FloatingIcon :icon="GlobeIcon" class="bottom-28 right-[100%]" />
 				</div>
 
 				<div class="flex flex-col items-center gap-y-12 w-full lg:w-3/5 relative">
-					<img
-						src="../icons/pencil.svg"
-						alt=""
-						class="w-10 md:w-16 lg:w-200 absolute top-[20%] lg:top-[12%] right-5"
+					<FloatingIcon :icon="PencilIcon" class="top-[20%] lg:top-[12%] right-5" />
+					<FloatingIcon
+						:icon="TestTubeIcon"
+						class="inset-x-0 mx-auto bottom-14 lg:bottom-20"
 					/>
-					<img
-						src="../icons/test-tube.svg"
-						alt=""
-						class="w-10 md:w-16 lg:w-20 absolute inset-x-0 mx-auto bottom-14 lg:bottom-20"
-					/>
-					<img
-						src="../icons/galaxy.svg"
-						alt=""
-						class="w-10 md:w-16 lg:w-20 absolute left-0 lg:left-10 -top-8"
-					/>
+					<FloatingIcon :icon="GalaxyIcon" class="left-0 lg:left-10 -top-8" />
 
 					<h3 class="font-extrabold text-3xl md:text-4xl lg:text-6xl">
 						<span class="text-dark">Premium</span>
