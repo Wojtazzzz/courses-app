@@ -16,7 +16,7 @@ const { courses, isLoading, isError } = useTopCourses();
 	<Container>
 		<section class="space-y-8">
 			<div class="w-full relative">
-				<FloatingIcon :icon="LightBulbFilledIcon" class="top-10 sm:top-3 left-[1%]" />
+				<FloatingIcon :icon="LightBulbFilledIcon" class="top-16 sm:top-3 left-[1%]" />
 
 				<SectionTitle
 					title="Top Courses"
