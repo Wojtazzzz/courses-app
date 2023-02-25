@@ -29,7 +29,7 @@ import GalaxyIcon from '../icons/floating/galaxy.svg';
 					<FloatingIcon :icon="GlobeIcon" class="bottom-28 right-[100%]" />
 				</div>
 
-				<div class="flex flex-col items-center gap-y-12 w-full lg:w-3/5 relative">
+				<div class="flex flex-col lg:items-center gap-y-12 w-full lg:w-3/5 relative">
 					<FloatingIcon :icon="PencilIcon" class="top-[20%] lg:top-[12%] right-5" />
 					<FloatingIcon
 						:icon="TestTubeIcon"
