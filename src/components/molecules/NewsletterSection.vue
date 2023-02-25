@@ -44,11 +44,12 @@ import CurledOrangeArrowIcon from '../icons/floating/curled-orange-arrow.svg';
 
 			<FloatingIcon
 				:icon="LightBulbFilledIcon"
-				class="bottom-3 md:bottom-4 right-[1%] md:right-[15%]"
+				class="hidden lg:inline bottom-6 right-[9%]"
 			/>
+
 			<FloatingIcon
 				:icon="CurledOrangeArrowIcon"
-				class="-bottom-1 md:-bottom-3 left-[3%] md:left-[13%]"
+				class="hidden lg:inline bottom-3 left-[11%]"
 			/>
 
 			<div class="text-center">

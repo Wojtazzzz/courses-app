@@ -16,7 +16,7 @@ const { courses, isLoading, isError } = useTopCourses();
 	<Container>
 		<section class="space-y-8">
 			<div class="w-full relative">
-				<FloatingIcon :icon="LightBulbFilledIcon" class="top-10 sm:top-3 left-[1%]" />
+				<FloatingIcon :icon="LightBulbFilledIcon" class="top-16 sm:top-3 left-[1%]" />
 
 				<SectionTitle
 					title="Top Courses"
@@ -32,7 +32,7 @@ const { courses, isLoading, isError } = useTopCourses();
 			<ul
 				v-else
 				role="list"
-				class="flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-12"
+				class="flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-16"
 			>
 				<li v-for="course in courses">
 					<CourseCard v-bind="course" />
