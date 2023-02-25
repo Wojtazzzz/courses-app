@@ -32,7 +32,7 @@ const { courses, isLoading, isError } = useTopCourses();
 			<ul
 				v-else
 				role="list"
-				class="flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-12"
+				class="flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-16"
 			>
 				<li v-for="course in courses">
 					<CourseCard v-bind="course" />
