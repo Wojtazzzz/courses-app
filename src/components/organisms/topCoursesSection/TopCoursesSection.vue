@@ -5,6 +5,9 @@ import CourseCard from '../../molecules/CourseCard.vue';
 import Loader from '../../atoms/Loader.vue';
 import ApiError from '../../atoms/ApiError.vue';
 import { useTopCourses } from './useTopCourses';
+import LightBulbFilledIcon from '../../icons/light-bulb-filled.svg';
+import CurledArrowIcon from '../../icons/curled-arrow.svg';
+import FloatingIcon from '../../atoms/FloatingIcon.vue';
 
 const { courses, isLoading, isError } = useTopCourses();
 </script>
@@ -13,12 +16,7 @@ const { courses, isLoading, isError } = useTopCourses();
 	<Container>
 		<section class="space-y-8">
 			<div class="w-full relative">
-				<img
-					src="../../icons/light-bulb-filled.svg"
-					width="110"
-					class="absolute top-10 sm:top-3 left-[1%] z-0"
-					alt=""
-				/>
+				<FloatingIcon :icon="LightBulbFilledIcon" class="top-10 sm:top-3 left-[1%]" />
 
 				<SectionTitle
 					title="Top Courses"
@@ -26,12 +24,7 @@ const { courses, isLoading, isError } = useTopCourses();
 					class="relative z-10"
 				/>
 
-				<img
-					src="../../icons/curled-arrow.svg"
-					width="110"
-					class="absolute -top-10 -right-4 sm:right-[6%] z-0"
-					alt=""
-				/>
+				<FloatingIcon :icon="CurledArrowIcon" class="-top-10 -right-4 sm:right-[6%]" />
 			</div>
 
 			<Loader v-if="isLoading" />

@@ -3,41 +3,25 @@ import AccentContainer from '../atoms/AccentContainer.vue';
 import BadgeIcon from '../atoms/BadgeIcon.vue';
 import Container from '../atoms/Container.vue';
 import ExamIcon from '../icons/exam.svg';
+import TestTubeIcon from '../icons/test-tube.svg';
+import RulerIcon from '../icons/ruler.svg';
+import AtomIcon from '../icons/atom.svg';
+import SetSquareIcon from '../icons/set-square.svg';
+import EllipseIcon from '../icons/ellipse.svg';
+import LightBulbIcon from '../icons/light-bulb.svg';
+import GlobeIcon from '../icons/globe.svg';
 import OnlineTestIcon from '../icons/online-test.svg';
 import CertificationIcon from '../icons/certification.svg';
+import FloatingIcon from '../atoms/FloatingIcon.vue';
 </script>
 
 <template>
 	<div class="bg-theme-primary relative">
-		<img
-			src="../icons/test-tube.svg"
-			alt=""
-			class="w-10 md:w-16 lg:w-20 absolute bottom-10 md:bottom-24 left-8"
-		/>
-
-		<img
-			src="../icons/ruler.svg"
-			alt=""
-			class="w-10 md:w-16 lg:w-20 absolute top-4 md:top-0 left-12 md:left-96 lg:left-52"
-		/>
-
-		<img
-			src="../icons/atom.svg"
-			alt=""
-			class="w-10 md:w-16 lg:w-20 absolute -top-1 right-[8%]"
-		/>
-
-		<img
-			src="../icons/set-square.svg"
-			alt=""
-			class="w-10 md:w-16 lg:w-20 absolute bottom-28 lg:bottom-56 left-[33%]"
-		/>
-
-		<img
-			src="../icons/globe.svg"
-			alt=""
-			class="w-10 md:w-16 lg:w-20 absolute bottom-20 lg:bottom-28 right-[14%]"
-		/>
+		<FloatingIcon :icon="TestTubeIcon" class="bottom-10 md:bottom-24 left-8" />
+		<FloatingIcon :icon="RulerIcon" class="top-4 md:top-0 left-12 md:left-96 lg:left-52" />
+		<FloatingIcon :icon="AtomIcon" class="-top-1 right-[8%]" />
+		<FloatingIcon :icon="SetSquareIcon" class="bottom-28 lg:bottom-56 left-[33%]" />
+		<FloatingIcon :icon="GlobeIcon" class="bottom-20 lg:bottom-28 right-[14%]" />
 
 		<Container>
 			<header class="pt-12 pb-16 lg:pt-16 lg:pb-52 relative">
@@ -69,17 +53,12 @@ import CertificationIcon from '../icons/certification.svg';
 							alt=""
 						/>
 
-						<img
-							src="../icons/ellipse.svg"
-							alt=""
-							class="w-72 absolute -top-16 -right-4 z-0"
+						<FloatingIcon
+							:icon="EllipseIcon"
+							class="lg:w-72 absolute -top-16 -right-4 z-0"
 						/>
 
-						<img
-							src="../icons/light-bulb.svg"
-							alt=""
-							class="w-20 absolute -top-8 left-[2%]"
-						/>
+						<FloatingIcon :icon="LightBulbIcon" class="-top-8 left-[2%]" />
 					</div>
 				</div>
 

@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import AccentContainer from '../atoms/AccentContainer.vue';
-import Button from '../atoms/Button.vue';
 import Container from '../atoms/Container.vue';
+import FloatingIcon from '../atoms/FloatingIcon.vue';
 import InputBox from '../atoms/InputBox.vue';
+import LightBulbFilledIcon from '../icons/light-bulb-filled.svg';
+import CurledOrangeArrowIcon from '../icons/curled-orange-arrow.svg';
 </script>
 
 <template>
@@ -40,16 +42,13 @@ import InputBox from '../atoms/InputBox.vue';
 				alt=""
 			/>
 
-			<img
-				src="../icons/light-bulb-filled.svg"
-				alt=""
-				class="w-14 md:w-20 lg:w-28 absolute bottom-3 md:bottom-4 right-[1%] md:right-[15%]"
+			<FloatingIcon
+				:icon="LightBulbFilledIcon"
+				class="bottom-3 md:bottom-4 right-[1%] md:right-[15%]"
 			/>
-
-			<img
-				src="../icons/curled-orange-arrow.svg"
-				alt=""
-				class="w-14 md:w-20 lg:w-28 absolute -bottom-1 md:-bottom-3 left-[3%] md:left-[13%]"
+			<FloatingIcon
+				:icon="CurledOrangeArrowIcon"
+				class="-bottom-1 md:-bottom-3 left-[3%] md:left-[13%]"
 			/>
 
 			<div class="text-center">

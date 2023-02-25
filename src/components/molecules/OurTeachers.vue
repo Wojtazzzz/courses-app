@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import Container from '../atoms/Container.vue';
+import FloatingIcon from '../atoms/FloatingIcon.vue';
 import SectionTitle from '../atoms/SectionTitle.vue';
+import CurledArrowIcon from '../icons/curled-arrow.svg';
+import OrangePlanetIcon from '../icons/orange-planet.svg';
 
 const teachers = 3;
 </script>
@@ -9,22 +12,14 @@ const teachers = 3;
 	<Container>
 		<section class="space-y-8">
 			<div class="relative">
-				<img
-					src="../icons/curled-arrow.svg"
-					alt=""
-					class="w-10 md:w-16 lg:w-20 absolute -top-5 left-0 md:left-5 rotate-180"
-				/>
+				<FloatingIcon :icon="CurledArrowIcon" class="-top-5 left-0 md:left-5 rotate-180" />
 
 				<SectionTitle
 					title="Our Teachers"
 					subtitle="Lorem Ipsum is simply dummy text of the printing."
 				/>
 
-				<img
-					src="../icons/orange-planet.svg"
-					alt=""
-					class="w-10 md:w-16 lg:w-20 absolute bottom-0 right-5"
-				/>
+				<FloatingIcon :icon="OrangePlanetIcon" class="bottom-0 right-5" />
 			</div>
 
 			<ul
