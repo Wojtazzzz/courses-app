@@ -26,7 +26,7 @@ import TopCoursesSection from '../organisms/topCoursesSection/TopCoursesSection.
 		<OurTeachers />
 	</div>
 
-	<div class="mt-24 md:mt-36">
+	<div class="mt-16 lg:mt-24">
 		<NewsletterSection />
 	</div>
 </template>
