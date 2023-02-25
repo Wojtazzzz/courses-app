@@ -22,10 +22,7 @@ const teachers = 3;
 				<FloatingIcon :icon="OrangePlanetIcon" class="bottom-0 right-5" />
 			</div>
 
-			<ul
-				role="list"
-				class="flex flex-col lg:flex-row justify-center items-center gap-x-7 gap-y-12"
-			>
+			<ul role="list" class="flex flex-col lg:flex-row justify-center items-center gap-6">
 				<li v-for="teacher in teachers" :key="teacher">
 					<article
 						class="max-w-[490px] w-full space-y-3 p-3 pb-4 shadow-[0px_4px_25px_rgba(0,0,0,0.1)] rounded-lg relative bg-theme-secondary"
