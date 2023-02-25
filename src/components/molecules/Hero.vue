@@ -18,8 +18,8 @@ import FloatingIcon from '../atoms/FloatingIcon.vue';
 <template>
 	<div class="bg-theme-primary relative">
 		<FloatingIcon :icon="TestTubeIcon" class="bottom-10 md:bottom-24 left-8" />
-		<FloatingIcon :icon="RulerIcon" class="top-4 md:top-0 left-12 md:left-96 lg:left-52" />
-		<FloatingIcon :icon="AtomIcon" class="-top-1 right-[8%]" />
+		<FloatingIcon :icon="RulerIcon" class="top-0 left-12 md:left-96 lg:left-52" />
+		<FloatingIcon :icon="AtomIcon" class="top-8 md:-top-1 right-[8%]" />
 		<FloatingIcon :icon="SetSquareIcon" class="bottom-28 lg:bottom-56 left-[33%]" />
 		<FloatingIcon :icon="GlobeIcon" class="bottom-20 lg:bottom-28 right-[14%]" />
 
