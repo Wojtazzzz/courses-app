@@ -5,8 +5,8 @@ import CourseCard from '../../molecules/CourseCard.vue';
 import Loader from '../../atoms/Loader.vue';
 import ApiError from '../../atoms/ApiError.vue';
 import { useTopCourses } from './useTopCourses';
-import LightBulbFilledIcon from '../../icons/light-bulb-filled.svg';
-import CurledArrowIcon from '../../icons/curled-arrow.svg';
+import LightBulbFilledIcon from '../../icons/floating/light-bulb-filled.svg';
+import CurledArrowIcon from '../../icons/floating/curled-arrow.svg';
 import FloatingIcon from '../../atoms/FloatingIcon.vue';
 
 const { courses, isLoading, isError } = useTopCourses();

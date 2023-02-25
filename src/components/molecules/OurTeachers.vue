@@ -2,8 +2,8 @@
 import Container from '../atoms/Container.vue';
 import FloatingIcon from '../atoms/FloatingIcon.vue';
 import SectionTitle from '../atoms/SectionTitle.vue';
-import CurledArrowIcon from '../icons/curled-arrow.svg';
-import OrangePlanetIcon from '../icons/orange-planet.svg';
+import CurledArrowIcon from '../icons/floating/curled-arrow.svg';
+import OrangePlanetIcon from '../icons/floating/orange-planet.svg';
 
 const teachers = 3;
 </script>

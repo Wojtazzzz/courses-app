@@ -3,8 +3,8 @@ import AccentContainer from '../atoms/AccentContainer.vue';
 import Container from '../atoms/Container.vue';
 import FloatingIcon from '../atoms/FloatingIcon.vue';
 import InputBox from '../atoms/InputBox.vue';
-import LightBulbFilledIcon from '../icons/light-bulb-filled.svg';
-import CurledOrangeArrowIcon from '../icons/curled-orange-arrow.svg';
+import LightBulbFilledIcon from '../icons/floating/light-bulb-filled.svg';
+import CurledOrangeArrowIcon from '../icons/floating/curled-orange-arrow.svg';
 </script>
 
 <template>

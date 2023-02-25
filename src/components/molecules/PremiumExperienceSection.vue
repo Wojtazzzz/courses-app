@@ -2,14 +2,14 @@
 import BadgeIcon from '../atoms/BadgeIcon.vue';
 import HeartsIcon from '../icons/hearts.svg';
 import JigsawIcon from '../icons/jigsaw.svg';
-import LightBulbIcon from '../icons/light-bulb.svg';
-import AtomIcon from '../icons/atom.svg';
-import GlobeIcon from '../icons/globe.svg';
+import LightBulbIcon from '../icons/floating/light-bulb.svg';
+import AtomIcon from '../icons/floating/atom.svg';
+import GlobeIcon from '../icons/floating/globe.svg';
 import Container from '../atoms/Container.vue';
 import FloatingIcon from '../atoms/FloatingIcon.vue';
-import PencilIcon from '../icons/pencil.svg';
-import TestTubeIcon from '../icons/test-tube.svg';
-import GalaxyIcon from '../icons/galaxy.svg';
+import PencilIcon from '../icons/floating/pencil.svg';
+import TestTubeIcon from '../icons/floating/test-tube.svg';
+import GalaxyIcon from '../icons/floating/galaxy.svg';
 </script>
 
 <template>
