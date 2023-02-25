@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Hero from '../molecules/Hero.vue';
 import NewsletterSection from '../molecules/NewsletterSection.vue';
-import OurTeachers from '../molecules/OurTeachers.vue';
+import OurTeachers from '../molecules/OurTeachersSection.vue';
 import PremiumExperienceSection from '../molecules/PremiumExperienceSection.vue';
 import FeedbackSection from '../organisms/FeedbackSection.vue';
 import TopCoursesSection from '../organisms/topCoursesSection/TopCoursesSection.vue';
