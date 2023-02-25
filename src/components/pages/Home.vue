@@ -18,7 +18,7 @@ import TopCoursesSection from '../organisms/topCoursesSection/TopCoursesSection.
 		<PremiumExperienceSection />
 	</div>
 
-	<div class="mt-20 md:mt-28">
+	<div class="mt-6 md:mt-12 lg:mt-24">
 		<FeedbackSection />
 	</div>
 
