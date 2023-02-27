@@ -55,7 +55,7 @@ defineProps<CourseCardProps>();
 				<ul role="list" class="flex items-center gap-4">
 					<li class="flex items-center gap-1.5">
 						<img src="../icons/cardCourse/time.svg" width="19" height="19" alt="" />
-						<span class="text-gray-400 font-medium text-sm md:text-base text-center"
+						<span class="text-gray-400 font-medium text-sm text-center"
 							>22hr 30min</span
 						>
 					</li>
@@ -66,13 +66,13 @@ defineProps<CourseCardProps>();
 							height="28"
 							alt=""
 						/>
-						<span class="text-gray-400 font-medium text-sm md:text-base text-center"
+						<span class="text-gray-400 font-medium text-sm text-center"
 							>34 Courses</span
 						>
 					</li>
 					<li class="flex items-center gap-1.5">
 						<img src="../icons/cardCourse/download.svg" width="17" height="17" alt="" />
-						<span class="text-gray-400 font-medium text-sm md:text-base text-center"
+						<span class="text-gray-400 font-medium text-sm text-center"
 							>{{ sales }} Sales</span
 						>
 					</li>
