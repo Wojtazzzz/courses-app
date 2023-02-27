@@ -1,7 +1,8 @@
+import { processExpression } from '@vue/compiler-core';
 import Axios from 'axios';
 
 export const axios = Axios.create({
-	baseURL: 'http://localhost:8000/api',
+	baseURL: import.meta.env.VITE_API_URL,
 	headers: {
 		'X-Requested-With': 'XMLHttpRequest',
 	},
