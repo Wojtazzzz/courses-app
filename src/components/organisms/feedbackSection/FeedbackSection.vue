@@ -1,18 +1,17 @@
 <script setup lang="ts">
-import Container from '../atoms/Container.vue';
-import SectionTitle from '../atoms/SectionTitle.vue';
-import Carousel from '../atoms/Carousel.vue';
+import Container from '../../atoms/Container.vue';
+import SectionTitle from '../../atoms/SectionTitle.vue';
+import Carousel from '../../atoms/Carousel.vue';
 import { SwiperSlide } from 'swiper/vue';
-
+import { useFeedback } from './useFeedback';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import Loader from '../../atoms/Loader.vue';
+import ApiError from '../../atoms/ApiError.vue';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+const { feedback, isLoading, isError } = useFeedback();
 </script>
 
 <template>
@@ -23,17 +22,22 @@ import 'swiper/css/scrollbar';
 				subtitle="Lorem Ipsum is simply dummy text of the printing."
 			/>
 
-			<Carousel>
-				<SwiperSlide v-for="feedback in 7" tag="li" aria-roledescription="slide">
+			<Loader v-if="isLoading" />
+			<ApiError v-else-if="isError" />
+			<Carousel v-else>
+				<SwiperSlide
+					v-for="{ id, content } in feedback"
+					:key="id"
+					tag="li"
+					aria-roledescription="slide"
+					class="h-full"
+				>
 					<article class="shadow-xl p-5 space-y-8 rounded-sm bg-theme-primary">
-						<q class="text-dark"
-							>Complete account of the system and expound the actual Contrary to
-							popular belief, Lorem Ipsum is not simply random text. It has roots</q
-						>
+						<q class="text-dark overflow-hidden">{{ content }}</q>
 
 						<header class="flex gap-3">
 							<img
-								src="../icons/dummy-feedback-avatar.png"
+								src="../../icons/dummy-feedback-avatar.png"
 								width="47"
 								height="47"
 								alt=""
